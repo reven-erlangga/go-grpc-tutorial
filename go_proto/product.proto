@@ -6,6 +6,12 @@ import "pagination.proto";
 
 option go_package = "/pb";
 
+service ProductService {
+    rpc GetProducts(Empty) returns (Products);
+}
+
+message Empty {}
+
 message Products {
     Pagination pagination = 1;
     repeated Product data = 2;
