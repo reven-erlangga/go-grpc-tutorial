@@ -1,3 +1,25 @@
 syntax = "proto3";
 
 package go_proto;
+
+import "pagination.proto";
+
+option go_package = "/pb";
+
+message Products {
+    Pagination pagination = 1;
+    repeated Product data = 2;
+}
+
+message Product {
+    uint64 id = 1;
+    string name = 2;
+    double price = 3;
+    uint32 stock = 4;
+    Category category = 5;
+}
+
+message Category {
+    uint32 id = 1;
+    string name = 2;
+}
