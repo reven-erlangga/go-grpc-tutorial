@@ -1,0 +1,30 @@
+{
+    "pagination": {
+        "total": 100,
+        "per_page": 10,
+        "current_page": 1,
+        "last_page": 10
+    },
+    "data": [
+        {
+            "id": 1,
+            "name": "Nike Black T-Shirt",
+            "price": 10000,
+            "stock": 10,
+            "category": {
+                "id": 1,
+                "name": "Shirt"
+            }
+        },
+        {
+            "id": 1,
+            "name": "Nike Black Jordan",
+            "price": 10000,
+            "stock": 10,
+            "category": {
+                "id": 1,
+                "name": "Shoe"
+            }
+        }
+    ]
+}
