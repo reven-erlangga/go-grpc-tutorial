@@ -1,0 +1,10 @@
+CREATE TABLE products (
+    id BIGINT PRIMARY KEY, category_id BIGINT NOT NULL, name VARCHAR(100) NOT NULL, price DECIMAL(10, 2) NOT NULL DEFAULT(0), stock INT(3) NOT NULL DEFAULT(0)
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+    id BIGINT PRIMARY KEY, name VARCHAR(100) NOT NULL
+);
+
+ALTER TABLE products
+ADD FOREIGN KEY (category_id) REFERENCES categories (id);

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package go_grpc;
 
-option go_package = "go_grpc/pb/pagination";
+option go_package = "/pb";
 
 message Pagination {
     uint64 total = 1;

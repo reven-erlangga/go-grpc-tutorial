@@ -4,7 +4,7 @@ package go_grpc;
 
 import "pagination.proto";
 
-option go_package = "go_grpc/pb/product";
+option go_package = "/pb";
 
 service ProductService {
     rpc GetProducts(Empty) returns (Products);
